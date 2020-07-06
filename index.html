@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>smartcity1</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+	<div class="left-col">
+		<img src="tele2.jpg">
+		<div class="content">
+			<h1>TELECOM SMARTCITY</h1>
+			<P>When you invest, you are buying a day that you don't have to work.</P>
+			<button type="button">register now</button>
+</div>
+		
+	</div>
+	<div class="right-col">
+
+		<div class="slider">
+			<img src="h.jpg" id="slide">
+		</div>
+		<div class="slider-content">
+			<h2>why every real estate agent needs a website?</h2>s
+		<hr>
+			<p>every small business can benefit from having a website and online presences...they can built awareness,generate quality leads,increses credibility along with brand.</p>
+			<div class="controller">
+				<img src="back.jpeg" id="backBtn">
+				<div class="vertical-line"></div>
+				<img src="front.jpeg" id="nextBtn">
+				
+
+
+			</div>
+			
+
+
+		</div>
+	</div>
+</div>
+<script>
+	
+	var slide = document.getElementById("slide");
+	var backBtn = document.getElementById("backBtn");
+	var nextBtn = document.getElementById("nextBtn");
+
+	var slideimages = new Array(
+		"j.jpg",
+		"g.jpg",
+		"h.jpg",
+		);
+
+	let i=0;
+
+	nextBtn.onclick = function(){
+		if(i<2){
+			slide.src = slideimages[i+1];
+			i++;
+		}		
+	}
+	backBtn.onclick = function(){
+		if(i>0){
+			slide.src = slideimages[i-1];
+			i--;
+		}		
+	}
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
